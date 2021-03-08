@@ -97,3 +97,9 @@ upload_data:
 	@gsutil cp ${LOCAL_PATH} gs://${BUCKET_NAME}/${BUCKET_FOLDER}/${BUCKET_FILE_NAME}
 	#@gsutil cp ${LOCAL_PATH1} gs://${BUCKET_NAME}/${BUCKET_FOLDER}/${BUCKET_FILE_NAME1}
 # @gsutil cp train_1k.csv gs://wagon-ml-my-bucket-name/data/train_1k.csv
+
+run_api:
+	uvicorn api.hand_motions_api:app --reload  # load web server with code autoreload
+
+streamlit:
+	-@streamlit run app.py
