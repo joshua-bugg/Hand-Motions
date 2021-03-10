@@ -2,6 +2,6 @@
 .coverage
 .ipynb_checkpoints
 .DS_Store
-raw_date/
+raw_date/*
 **/__pycache__/
 .env
