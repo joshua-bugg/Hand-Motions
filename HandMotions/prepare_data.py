@@ -64,7 +64,6 @@ def custom_train_test_split(X, y):
     ytrain=y[:splitrate]
     return xtrain, xval, xtest, ytrain, yval, ytest
 
-
 # X1, y1= loading_one_subject(1)
 # print(type(X1))
 # print(type(y1))
